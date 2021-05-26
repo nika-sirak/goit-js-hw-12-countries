@@ -12,7 +12,16 @@
     />
   </head>
   <body>
-   
+    <form class="form-inline search-form js-search-form">
+      <div class="form-wrap">
+        <label for="searchQuery" class="sr-counties">Cтрана</label>
+        <input type="text" class="form-input" name="query" id="searchQuery" placeholder="Введи название страны" autocomplete="off" />
+      </div>
+    </form>
+
+    <ul class="countries-list js-countries-list"></ul>
+    <div class = "country-card js-country-card"></div>
+
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
