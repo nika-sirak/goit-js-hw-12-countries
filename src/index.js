@@ -35,10 +35,12 @@ function onFormInput(e) {
         });
       }
     })
-    .catch(error => {
-      console.log(error);
+    .catch(e => {
       resetListCountries();
       clearCountryCard();
+      error({
+        text: 'Country was not defined!',
+      });
     });
 }
 
